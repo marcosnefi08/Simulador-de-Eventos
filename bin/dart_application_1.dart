@@ -47,7 +47,7 @@ void main() {
         }
         break;
       case '2':
-        print('Digite o andar para o qual deseja descer (entre 1 e 10):');
+        print('Digite o andar para o qual deseja descer (entre 1 e o andar atual):');
         int? andarDestino = int.tryParse(stdin.readLineSync()!);
         if (andarDestino != null && andarDestino < andarAtual && andarDestino >= 1) {
           moverElevador(andarDestino);
